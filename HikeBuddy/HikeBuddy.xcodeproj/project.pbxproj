@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83FB11C81D277F7F0024A8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11C71D277F7F0024A8A9 /* main.m */; };
+		83FB11CB1D277F7F0024A8A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */; };
+		83FB11CE1D277F7F0024A8A9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CD1D277F7F0024A8A9 /* FirstViewController.m */; };
+		83FB11D11D277F7F0024A8A9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11D01D277F7F0024A8A9 /* SecondViewController.m */; };
+		83FB11D41D277F7F0024A8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB11D21D277F7F0024A8A9 /* Main.storyboard */; };
+		83FB11D61D277F7F0024A8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FB11D51D277F7F0024A8A9 /* Assets.xcassets */; };
+		83FB11D91D277F7F0024A8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB11D71D277F7F0024A8A9 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; path = "../../../../Users/chris/Downloads/Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; sourceTree = "<group>"; };
+		83FB11C31D277F7F0024A8A9 /* HikeBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FB11C71D277F7F0024A8A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83FB11C91D277F7F0024A8A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83FB11CC1D277F7F0024A8A9 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		83FB11CD1D277F7F0024A8A9 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		83FB11CF1D277F7F0024A8A9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		83FB11D01D277F7F0024A8A9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		83FB11D31D277F7F0024A8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83FB11D51D277F7F0024A8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83FB11D81D277F7F0024A8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83FB11DA1D277F7F0024A8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83FB11C01D277F7F0024A8A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83FB11BA1D277F7F0024A8A9 = {
+			isa = PBXGroup;
+			children = (
+				8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */,
+				83FB11C51D277F7F0024A8A9 /* HikeBuddy */,
+				83FB11C41D277F7F0024A8A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83FB11C41D277F7F0024A8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83FB11C31D277F7F0024A8A9 /* HikeBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83FB11C51D277F7F0024A8A9 /* HikeBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				83FB11C91D277F7F0024A8A9 /* AppDelegate.h */,
+				83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */,
+				83FB11CC1D277F7F0024A8A9 /* FirstViewController.h */,
+				83FB11CD1D277F7F0024A8A9 /* FirstViewController.m */,
+				83FB11CF1D277F7F0024A8A9 /* SecondViewController.h */,
+				83FB11D01D277F7F0024A8A9 /* SecondViewController.m */,
+				83FB11D21D277F7F0024A8A9 /* Main.storyboard */,
+				83FB11D51D277F7F0024A8A9 /* Assets.xcassets */,
+				83FB11D71D277F7F0024A8A9 /* LaunchScreen.storyboard */,
+				83FB11DA1D277F7F0024A8A9 /* Info.plist */,
+				83FB11C61D277F7F0024A8A9 /* Supporting Files */,
+			);
+			path = HikeBuddy;
+			sourceTree = "<group>";
+		};
+		83FB11C61D277F7F0024A8A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83FB11C71D277F7F0024A8A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83FB11C21D277F7F0024A8A9 /* HikeBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FB11DD1D277F7F0024A8A9 /* Build configuration list for PBXNativeTarget "HikeBuddy" */;
+			buildPhases = (
+				83FB11BF1D277F7F0024A8A9 /* Sources */,
+				83FB11C01D277F7F0024A8A9 /* Frameworks */,
+				83FB11C11D277F7F0024A8A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikeBuddy;
+			productName = HikeBuddy;
+			productReference = 83FB11C31D277F7F0024A8A9 /* HikeBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83FB11BB1D277F7F0024A8A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					83FB11C21D277F7F0024A8A9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2S3D8J8M3T;
+						DevelopmentTeamName = "Apple, Inc. (iOS App Challenge)";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 83FB11BE1D277F7F0024A8A9 /* Build configuration list for PBXProject "HikeBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83FB11BA1D277F7F0024A8A9;
+			productRefGroup = 83FB11C41D277F7F0024A8A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83FB11C21D277F7F0024A8A9 /* HikeBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83FB11C11D277F7F0024A8A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FB11D91D277F7F0024A8A9 /* LaunchScreen.storyboard in Resources */,
+				83FB11D61D277F7F0024A8A9 /* Assets.xcassets in Resources */,
+				83FB11D41D277F7F0024A8A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83FB11BF1D277F7F0024A8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FB11D11D277F7F0024A8A9 /* SecondViewController.m in Sources */,
+				83FB11CB1D277F7F0024A8A9 /* AppDelegate.m in Sources */,
+				83FB11CE1D277F7F0024A8A9 /* FirstViewController.m in Sources */,
+				83FB11C81D277F7F0024A8A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83FB11D21D277F7F0024A8A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83FB11D31D277F7F0024A8A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83FB11D71D277F7F0024A8A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83FB11D81D277F7F0024A8A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83FB11DB1D277F7F0024A8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Apple Inc. - Tangier";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apple Inc. - Tangier";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83FB11DC1D277F7F0024A8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Apple Inc. - Tangier";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apple Inc. - Tangier";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83FB11DE1D277F7F0024A8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeBuddy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
+				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+			};
+			name = Debug;
+		};
+		83FB11DF1D277F7F0024A8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeBuddy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
+				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83FB11BE1D277F7F0024A8A9 /* Build configuration list for PBXProject "HikeBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FB11DB1D277F7F0024A8A9 /* Debug */,
+				83FB11DC1D277F7F0024A8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83FB11DD1D277F7F0024A8A9 /* Build configuration list for PBXNativeTarget "HikeBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FB11DE1D277F7F0024A8A9 /* Debug */,
+				83FB11DF1D277F7F0024A8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83FB11BB1D277F7F0024A8A9 /* Project object */;
+}
