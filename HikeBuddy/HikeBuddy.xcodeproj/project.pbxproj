@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83826C391D28FBC900D95CEE /* libUnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83826C341D28FBBD00D95CEE /* libUnirest.a */; };
+		83E3F5261D2901C500CA980F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E3F5251D2901C500CA980F /* CoreLocation.framework */; };
+		83E3F5291D29830900CA980F /* MobileWiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E3F5281D29830900CA980F /* MobileWiFi.framework */; };
 		83FB11C81D277F7F0024A8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11C71D277F7F0024A8A9 /* main.m */; };
 		83FB11CB1D277F7F0024A8A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */; };
 		83FB11CE1D277F7F0024A8A9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CD1D277F7F0024A8A9 /* FirstViewController.m */; };
@@ -16,8 +19,35 @@
 		83FB11D91D277F7F0024A8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB11D71D277F7F0024A8A9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		83826C331D28FBBD00D95CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9E78BA916E9801F006B80FD;
+			remoteInfo = Unirest;
+		};
+		83826C351D28FBBD00D95CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9E78BBA16E9801F006B80FD;
+			remoteInfo = UnirestTests;
+		};
+		83826C371D28FBC500D95CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E78BA816E9801F006B80FD;
+			remoteInfo = Unirest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; path = "../../../../Users/chris/Downloads/Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; sourceTree = "<group>"; };
+		83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Unirest.xcodeproj; path = "../../unirest-obj-c/Unirest.xcodeproj"; sourceTree = "<group>"; };
+		83E3F5251D2901C500CA980F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		83E3F5281D29830900CA980F /* MobileWiFi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileWiFi.framework; path = System/Library/PrivateFrameworks/MobileWiFi.framework; sourceTree = SDKROOT; };
 		83FB11C31D277F7F0024A8A9 /* HikeBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB11C71D277F7F0024A8A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83FB11C91D277F7F0024A8A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,18 +67,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E3F5261D2901C500CA980F /* CoreLocation.framework in Frameworks */,
+				83826C391D28FBC900D95CEE /* libUnirest.a in Frameworks */,
+				83E3F5291D29830900CA980F /* MobileWiFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83826C2F1D28FBBD00D95CEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83826C341D28FBBD00D95CEE /* libUnirest.a */,
+				83826C361D28FBBD00D95CEE /* UnirestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E3F5241D2901C500CA980F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83E3F5281D29830900CA980F /* MobileWiFi.framework */,
+				83E3F5251D2901C500CA980F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83FB11BA1D277F7F0024A8A9 = {
 			isa = PBXGroup;
 			children = (
 				8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */,
 				83FB11C51D277F7F0024A8A9 /* HikeBuddy */,
 				83FB11C41D277F7F0024A8A9 /* Products */,
+				83E3F5241D2901C500CA980F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +133,7 @@
 		83FB11C61D277F7F0024A8A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */,
 				83FB11C71D277F7F0024A8A9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -100,6 +153,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				83826C381D28FBC500D95CEE /* PBXTargetDependency */,
 			);
 			name = HikeBuddy;
 			productName = HikeBuddy;
@@ -134,12 +188,35 @@
 			mainGroup = 83FB11BA1D277F7F0024A8A9;
 			productRefGroup = 83FB11C41D277F7F0024A8A9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83826C2F1D28FBBD00D95CEE /* Products */;
+					ProjectRef = 83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				83FB11C21D277F7F0024A8A9 /* HikeBuddy */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		83826C341D28FBBD00D95CEE /* libUnirest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnirest.a;
+			remoteRef = 83826C331D28FBBD00D95CEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		83826C361D28FBBD00D95CEE /* UnirestTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnirestTests.octest;
+			remoteRef = 83826C351D28FBBD00D95CEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		83FB11C11D277F7F0024A8A9 /* Resources */ = {
@@ -168,6 +245,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		83826C381D28FBC500D95CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Unirest;
+			targetProxy = 83826C371D28FBC500D95CEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		83FB11D21D277F7F0024A8A9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -191,7 +276,7 @@
 		83FB11DB1D277F7F0024A8A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -210,9 +295,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Apple Inc. - Tangier";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apple Inc. - Tangier";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -227,18 +313,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos.internal;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PRIVATE_FRAMEWORKS_DIR) $(PROJECT_DIR)/**";
 			};
 			name = Debug;
 		};
 		83FB11DC1D277F7F0024A8A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -260,6 +348,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -268,10 +357,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos.internal;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PRIVATE_FRAMEWORKS_DIR) $(PROJECT_DIR)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -280,12 +371,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				INFOPLIST_FILE = HikeBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HikeBuddy",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
 				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -293,12 +390,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				INFOPLIST_FILE = HikeBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HikeBuddy",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
 				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Release;
 		};
