@@ -9,7 +9,8 @@
 #import "SecondViewController.h"
 
 #import <CoreLocation/CoreLocation.h>
-#import <MobileWiFi/MobileWiFi.h>
+#import <NetworkExtension/NetworkExtension.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 #import "UNIRest.h"
 
 static NSUInteger kServerPort = 3000;
@@ -35,6 +36,8 @@ static NSUInteger kServerPort = 3000;
     
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    self.name.text = [[UIDevice currentDevice] name];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +58,8 @@ static NSUInteger kServerPort = 3000;
             [_locationManager requestAlwaysAuthorization];
         }
         
+        [[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
+        
         [self p_locationTick];
     }
     else {
@@ -62,39 +67,9 @@ static NSUInteger kServerPort = 3000;
         self.server.enabled = YES;
         
         // TODO: POST /remove_hiker/:id
+        
+        [[UIDevice currentDevice] setBatteryMonitoringEnabled:NO];
     }
-}
-
-- (NSNumber*) p_wifiStrength
-{
-    WiFiManagerClientRef manager = WiFiManagerClientCreate(kCFAllocatorDefault, 0);
-    CFArrayRef devices = WiFiManagerClientCopyDevices(manager);
-    
-    WiFiDeviceClientRef client = (WiFiDeviceClientRef)CFArrayGetValueAtIndex(devices, 0);
-    CFDictionaryRef data = (CFDictionaryRef)WiFiDeviceClientCopyProperty(client, CFSTR("RSSI"));
-    CFNumberRef scaled = (CFNumberRef)WiFiDeviceClientCopyProperty(client, kWiFiScaledRSSIKey);
-    
-    CFNumberRef RSSI = (CFNumberRef)CFDictionaryGetValue(data, CFSTR("RSSI_CTL_AGR"));
-    
-    int raw;
-    CFNumberGetValue(RSSI, kCFNumberIntType, &raw);
-    
-    float strength;
-    CFNumberGetValue(scaled, kCFNumberFloatType, &strength);
-    CFRelease(scaled);
-    
-    strength *= -1;
-    
-    // Apple uses -3.0.
-    int bars = (int)ceilf(strength * -3.0f);
-    bars = MAX(1, MIN(bars, 3));
-    
-    CFRelease(data);
-    CFRelease(scaled);
-    CFRelease(devices);
-    CFRelease(manager);
-    
-    return [NSNumber numberWithInt:bars];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -102,9 +77,6 @@ static NSUInteger kServerPort = 3000;
 - (void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     NSLog(@"didFailWithError: %@", error);
-    UIAlertView *errorAlert = [[UIAlertView alloc]
-                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [errorAlert show];
 }
 
 - (void) p_locationTick
@@ -134,12 +106,13 @@ static NSUInteger kServerPort = 3000;
         NSString *url;
         NSString *server = [NSString stringWithFormat:@"http://%@:%lu", self.server.text, (unsigned long)kServerPort];
         
+        CGFloat batteryLevel = [[UIDevice currentDevice] batteryLevel];
+        
         NSDictionary* headers = @{@"accept": @"application/json"};
         NSDictionary *parameters = @{@"name": self.name.text,
                                      @"latitude": latitude,
                                      @"longitude": longitude,
-                                     @"signal_strength" : [self p_wifiStrength]};
-        
+                                     @"batteryLevel" : @(batteryLevel)};
         if (_hikerId == nil) {
             url = [NSString stringWithFormat:@"%@/add_hiker", server];
             
@@ -170,9 +143,7 @@ static NSUInteger kServerPort = 3000;
                   // See if any messages dropped
             }
             else {
-                UIAlertView *errorAlert = [[UIAlertView alloc]
-                                           initWithTitle:@"Error" message:body[@"description"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [errorAlert show];
+                NSLog(@"Error encountered: %@", body);
             }
         }
     }

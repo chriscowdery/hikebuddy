@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		83826C391D28FBC900D95CEE /* libUnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83826C341D28FBBD00D95CEE /* libUnirest.a */; };
+		83D218461D29A6220039634C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D218451D29A6220039634C /* SystemConfiguration.framework */; };
+		83D218491D29A7C80039634C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D218481D29A7C80039634C /* NetworkExtension.framework */; };
 		83E3F5261D2901C500CA980F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E3F5251D2901C500CA980F /* CoreLocation.framework */; };
-		83E3F5291D29830900CA980F /* MobileWiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E3F5281D29830900CA980F /* MobileWiFi.framework */; };
 		83FB11C81D277F7F0024A8A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11C71D277F7F0024A8A9 /* main.m */; };
 		83FB11CB1D277F7F0024A8A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */; };
 		83FB11CE1D277F7F0024A8A9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FB11CD1D277F7F0024A8A9 /* FirstViewController.m */; };
@@ -44,8 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; path = "../../../../Users/chris/Downloads/Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision"; sourceTree = "<group>"; };
 		83826C2E1D28FBBD00D95CEE /* Unirest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Unirest.xcodeproj; path = "../../unirest-obj-c/Unirest.xcodeproj"; sourceTree = "<group>"; };
+		83D218451D29A6220039634C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		83D218471D29A6B40039634C /* HikeBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HikeBuddy.entitlements; sourceTree = "<group>"; };
+		83D218481D29A7C80039634C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		83E3F5251D2901C500CA980F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		83E3F5281D29830900CA980F /* MobileWiFi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileWiFi.framework; path = System/Library/PrivateFrameworks/MobileWiFi.framework; sourceTree = SDKROOT; };
 		83FB11C31D277F7F0024A8A9 /* HikeBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,9 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D218461D29A6220039634C /* SystemConfiguration.framework in Frameworks */,
+				83D218491D29A7C80039634C /* NetworkExtension.framework in Frameworks */,
 				83E3F5261D2901C500CA980F /* CoreLocation.framework in Frameworks */,
 				83826C391D28FBC900D95CEE /* libUnirest.a in Frameworks */,
-				83E3F5291D29830900CA980F /* MobileWiFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,8 @@
 		83E3F5241D2901C500CA980F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83D218481D29A7C80039634C /* NetworkExtension.framework */,
+				83D218451D29A6220039634C /* SystemConfiguration.framework */,
 				83E3F5281D29830900CA980F /* MobileWiFi.framework */,
 				83E3F5251D2901C500CA980F /* CoreLocation.framework */,
 			);
@@ -97,7 +103,6 @@
 		83FB11BA1D277F7F0024A8A9 = {
 			isa = PBXGroup;
 			children = (
-				8381B58C1D278906002618B7 /* Tangier Provisioning Profile  2.0_UPP_2016-05-09.mobileprovision */,
 				83FB11C51D277F7F0024A8A9 /* HikeBuddy */,
 				83FB11C41D277F7F0024A8A9 /* Products */,
 				83E3F5241D2901C500CA980F /* Frameworks */,
@@ -115,6 +120,7 @@
 		83FB11C51D277F7F0024A8A9 /* HikeBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				83D218471D29A6B40039634C /* HikeBuddy.entitlements */,
 				83FB11C91D277F7F0024A8A9 /* AppDelegate.h */,
 				83FB11CA1D277F7F0024A8A9 /* AppDelegate.m */,
 				83FB11CC1D277F7F0024A8A9 /* FirstViewController.h */,
@@ -174,6 +180,11 @@
 						DevelopmentTeam = 2S3D8J8M3T;
 						DevelopmentTeamName = "Apple, Inc. (iOS App Challenge)";
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -292,8 +303,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Apple Inc. - Tangier";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apple Inc. - Tangier";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Cowdery-Corvan (435V9D9CSE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Cowdery-Corvan (435V9D9CSE)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -317,7 +328,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos.internal;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(PRIVATE_FRAMEWORKS_DIR) $(PROJECT_DIR)/**";
 			};
@@ -342,8 +353,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Apple Inc. - Tangier";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apple Inc. - Tangier";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Cowdery-Corvan (435V9D9CSE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Cowdery-Corvan (435V9D9CSE)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -360,7 +371,7 @@
 				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos.internal;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(PRIVATE_FRAMEWORKS_DIR) $(PROJECT_DIR)/**";
 				VALIDATE_PRODUCT = YES;
@@ -371,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HikeBuddy/HikeBuddy.entitlements;
 				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				INFOPLIST_FILE = HikeBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,10 +390,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HikeBuddy",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = us.chrisandmeg.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
-				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+				PROVISIONING_PROFILE = "835b87d4-53d8-4650-962b-be3a5ed7192c";
+				PROVISIONING_PROFILE_SPECIFIER = "2S3D8J8M3T/CCC Test Sandbox";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Debug;
@@ -390,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HikeBuddy/HikeBuddy.entitlements;
 				HEADER_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
 				INFOPLIST_FILE = HikeBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,10 +411,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HikeBuddy",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HikeBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = us.chrisandmeg.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "077dd9f3-c15e-40f0-8497-937fe023ddd9";
-				PROVISIONING_PROFILE_SPECIFIER = "JCRTNEU7GK/Tangier Provisioning Profile  2.0";
+				PROVISIONING_PROFILE = "835b87d4-53d8-4650-962b-be3a5ed7192c";
+				PROVISIONING_PROFILE_SPECIFIER = "2S3D8J8M3T/CCC Test Sandbox";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 			};
 			name = Release;
