@@ -33,6 +33,7 @@ static NSUInteger kServerPort = 3000;
     _hikerId = nil;
     
     _locationManager = [[CLLocationManager alloc] init];
+    _backgroundTaskList = [[NSMutableSet alloc] init];
     
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -71,6 +72,9 @@ static NSUInteger kServerPort = 3000;
         [[UIDevice currentDevice] setBatteryMonitoringEnabled:NO];
     }
 }
+
+#pragma mark - Background Task
+
 
 #pragma mark - CLLocationManagerDelegate
 
